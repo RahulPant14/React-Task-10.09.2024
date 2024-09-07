@@ -1,0 +1,33 @@
+body{background: aqua;}
+.container{max-width: 1200px; margin: auto; background: #47e8ee;}
+.myName{padding: 20px;text-align: left;}
+.header{background: #000; color: #fff;display: flex; justify-content: center; padding: 15px 0;position: relative;}
+.header .input{padding: 10px 0; width: 300px; text-align: center;}
+.header .btn{padding: 10px; width: 50px;cursor: pointer;}
+.header i{position: absolute;color: #000;right: 440px; top: 27px;}
+.carts{display: flex; flex-flow: row wrap; justify-content: center;} 
+.cart{width: 280px; height: 280px; margin: 8px;border: 1px solid #000;}
+.cart button{width: 100%; padding: 5px 0; cursor: pointer;}
+.cart img{width: 100%; height: 90%;}
+.cart input{width: 100%; padding: 5px 0;}
+
+
+
+
+@media screen and (max-width:980px) {
+
+    .cart {width: 346px}
+    
+}
+
+@media screen and (max-width:767px) {
+
+    .cart {width: 295px;}
+    
+}
+
+@media screen and (max-width:459px) {
+
+    .cart {width: 320px;}
+    
+}

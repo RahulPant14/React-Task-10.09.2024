@@ -1,0 +1,210 @@
+
+/* .capt-cart{display: grid; grid-template-columns: repeat(2, 1fr);gap: 0 20px;}
+.capt-cart img{width: 590px; height: 590px;border: 2px solid #000;vertical-align: bottom;}
+.capt-text{border: 2px solid #000;}
+.capt-text label{display: block; width: 100%;border-bottom: 2px solid #000; text-align: center;padding: 10px 0;}
+.capt-text textarea{border: none; outline: none; padding: 10px;}
+.capt-text input{width: 100%;padding: 11px; background: green;cursor: pointer;}
+.capt-text .btn-crop{
+    background-image: linear-gradient( 134.6deg,  rgba(201,37,107,1) 15.4%, rgba(116,16,124,1) 74.7% );
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #c70909;
+    transition: ease-out 0.3s;
+    outline: none;
+    color: #fff;
+}
+.capt-text .btn-crop:hover{
+    box-shadow: inset 590px 0 0 0 #c70909;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    
+}
+
+@media screen and (max-width:1080px) {
+    .capt-cart img{width: 100%; height: auto;}
+    .capt-cart{display: grid; grid-template-columns: repeat(1, 1fr);gap: 0 20px;}
+} */
+
+/* Global styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .capt-cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .capt-img,
+  .capt-text {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .capt-img canvas,
+  .capt-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .capt-text label{
+    display: block; 
+    width: 100%;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  
+  .capt-text textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+
+  .btn-crop{
+    background-image: linear-gradient( 134.6deg,  rgba(201,37,107,1) 15.4%, rgba(116,16,124,1) 74.7% );
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #c70909;
+    transition: ease 0.8s;
+    outline: none;
+    color: #fff;
+  }
+  .btn-crop:hover{
+    box-shadow: inset 300px 0 0 0 #c70909;
+  }
+  
+  .btn-donld {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: inset 0 0 0 0 #007bff;
+    transition: ease 0.8s;
+  }
+  
+  
+  .btn-donld:hover {
+    box-shadow: inset 300px 0 0 0 #007bff;
+  }
+  
+  
+  /* Responsive styling */
+  
+  /* For tablets (landscape and portrait) */
+  @media screen and (min-width: 600px) {
+    .capt-cart {
+      justify-content: space-between;
+    }
+  
+    .capt-img,
+    .capt-text {
+      width: 48%;
+    }
+  
+    .capt-text textarea {
+      height: 200px;
+    }
+  
+    .btn-crop,
+    .btn-donld {
+      width: 48%;
+    }
+  }
+  
+  /* For desktops and large screens */
+  @media screen and (min-width: 1024px) {
+    .container {
+      padding: 40px;
+    }
+  
+    .capt-cart {
+      flex-wrap: nowrap;
+    }
+  
+    .capt-img,
+    .capt-text {
+      width: 48%;
+    }
+  
+    .btn-crop,
+    .btn-donld {
+      width: auto;
+    }
+  
+    .capt-text textarea {
+      height: 300px;
+    }
+  
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+  
+  /* For mobile devices (portrait and smaller screens) */
+  @media screen and (max-width: 599px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.8em;
+    }
+  
+    .capt-cart {
+      flex-direction: column;
+    }
+  
+    .capt-img,
+    .capt-text {
+      width: 100%;
+    }
+  
+    .capt-text textarea {
+      height: 150px;
+    }
+  
+    .btn-crop,
+    .btn-donld {
+      width: 100%;
+    }
+  }
+  
