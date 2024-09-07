@@ -34,6 +34,7 @@ const  Comp1=() => {
        <div className="myName">
        <p>Name: RAHUL PANT</p>
        <p>Email: ROHANPANT80@GMAIL.COM</p>
+        Github Link: <a href="https://github.com/RahulPant14/React-Task-10.09.2024">Click me for Source Code</a>
        </div>
         <div className="header">
               <input className='input' type="text" placeholder='ENTER YOUR SEARCH TERM' value={search} onChange={handleChange} />
